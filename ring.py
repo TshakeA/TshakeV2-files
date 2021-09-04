@@ -96,7 +96,7 @@ def updateCb(client, callback_query,redis):
             
             ar.append(a)
             a = []
-        ar.append([InlineKeyboardButton("📣",url="t.me/zx_xx")])
+        ar.append([InlineKeyboardButton("📣",url="t.me/rnnni")])
         kb = InlineKeyboardMarkup(ar)
 
         Bot("editMessageText",{"chat_id":chatID,"message_id":message_id,"text":"⏺꒐ اختر اليد التي تتوقع فيها الخاتم","disable_web_page_preview":True,"reply_markup":kb})
@@ -217,7 +217,7 @@ def updateCb(client, callback_query,redis):
       InlineKeyboardButton("📃",callback_data="st1={}={}=1".format(userid,userID)),
       InlineKeyboardButton("✂️",callback_data="st1={}={}=2".format(userid,userID)),],
 
-      [InlineKeyboardButton("📣",url="t.me/zx_xx")]
+      [InlineKeyboardButton("📣",url="t.me/rnnni")]
       ])
 
     Bot("editMessageText",{"chat_id":chatID,"message_id":message_id,"text":go.format("⏺",userFn,"⏺",userFN, userFn),"disable_web_page_preview":True,"reply_markup":kb})
